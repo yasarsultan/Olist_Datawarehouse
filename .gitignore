@@ -1,0 +1,6 @@
+/.venv
+/olist
+/rawOlist
+.env
+service-account-file.json
+dev.ipynb
