@@ -2,7 +2,7 @@
 FROM python:3.10-slim
 
 # Set the working directory in the container
-WORKDIR /app
+WORKDIR /src
 
 # Copy requirements.txt file to leverage Docker cache
 COPY requirements.txt .
@@ -11,8 +11,8 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir --upgrade pip && \
     pip install --no-cache-dir -r requirements.txt
 
-# Copy current directory contents into the container at /app
+# Copy current directory contents into the container at /src
 COPY . .
 
 # Command to run the data pipeline
-CMD ["python", "datapipeline.py"]
+CMD ["sh", "-c", "python scripts/preprocess.py && python scripts/staging_pipeline.py && python scripts/production_pipeline.py"]
