@@ -15,4 +15,4 @@ RUN pip install --no-cache-dir --upgrade pip && \
 COPY . .
 
 # Command to run the data pipeline
-CMD ["sh", "-c", "python scripts/preprocess.py && python scripts/staging_pipeline.py && python scripts/production_pipeline.py"]
+CMD ["sh", "-c", "python preprocess.py && python staging_pipeline.py && python production_pipeline.py"]
