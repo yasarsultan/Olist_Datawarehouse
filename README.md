@@ -72,7 +72,7 @@ Olist_Datawarehouse/
 
 ## Data Model
 This project implements a star schema with 4 dimension and 1 fact table.
-
+![img1](https://github.com/yasarsultan/Olist_Datawarehouse/blob/main/imgs/schema.png)
 
 
 ## Airflow DAG
@@ -83,7 +83,9 @@ The Airflow DAG (`etl_dag.py`) orchestrates the following tasks in order:
 
 ## Looker Dashboard
 Dashboard can be accessed at: [Link](https://lookerstudio.google.com/s/rwDQIflFSEc)
+![img2](https://github.com/yasarsultan/Olist_Datawarehouse/blob/main/imgs/Dashboard.png)
 
+![img3](https://github.com/yasarsultan/Olist_Datawarehouse/blob/main/imgs/BigQuery.png)
 
 ## Usage with Docker
 
@@ -132,3 +134,4 @@ docker compose down --volumes --rmi all
 For more detailed information on the Airflow docker-compose setup, refer to the [official Airflow documentation](https://airflow.apache.org/docs/apache-airflow/stable/howto/docker-compose/index.html).
 
 PS: After step 2 I was not able to complete the second approach because of my machine's limitations. But I hope that the remaining steps will work properly.
+![img4](https://github.com/yasarsultan/Olist_Datawarehouse/blob/main/imgs/dockCompose.png)
