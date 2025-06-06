@@ -54,7 +54,7 @@ Olist_Datawarehouse/
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/olist-datawarehouse.git
+   git clone https://github.com/yasarsultan/Olist_Datawarehouse.git
    cd olist-datawarehouse
    ```
 
